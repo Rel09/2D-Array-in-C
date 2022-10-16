@@ -4,7 +4,8 @@ int	**intarray(int x, int y)
 {
 	int i;
 	int **a;
-    
+
+	i = 0;
 	a = (int **)malloc(x * sizeof(int*));
 	while (i < x)
 	{
