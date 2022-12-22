@@ -31,6 +31,8 @@ char **chararray(int x, int y)
 {
     int i;
     char **a;
+	
+    i = 0;
     a = (char **)malloc(x * sizeof(char*));
     while (i < x)
     {
