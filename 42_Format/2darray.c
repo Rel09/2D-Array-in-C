@@ -7,6 +7,8 @@ int	**intarray(int x, int y)
 
 	i = 0;
 	a = (int **)malloc(x * sizeof(int*));
+    if (!a)
+        return (0);
 	while (i < x)
 		a[i++] = (int *)malloc(y * sizeof(int));
     return (a);
@@ -29,6 +31,8 @@ char **chararray(int x, int y)
 	
     i = 0;
     a = (char **)malloc(x * sizeof(char*));
+    if (!a)
+        return (0);
     while (i < x)
         a[i++] = (char *)malloc(y * sizeof(char));
     return (a); 
