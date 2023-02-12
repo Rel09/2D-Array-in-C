@@ -6,8 +6,7 @@ For some reason, this isnt already included in c standard library
 so there you go
 
 
-I included one in 42School format
-& a normal one
+I included one in 42School format & a normal one
 
 Give me a star if you found this useful :)
 ```
