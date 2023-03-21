@@ -10,7 +10,12 @@ int	**intarray(int x, int y)
     if (!a)
         return (0);
 	while (i < x)
-		a[i++] = (int *)malloc(y * sizeof(int));
+    {
+		a[i] = (int *)malloc(y * sizeof(int));
+        if (!a[i])
+            return (0);
+        i++;
+    }
     return (a);
 }
 
@@ -34,7 +39,12 @@ char **chararray(int x, int y)
     if (!a)
         return (0);
     while (i < x)
-        a[i++] = (char *)malloc(y * sizeof(char));
+    {
+        a[i] = (char *)malloc(y * sizeof(char));
+        if (!a[i])
+            return (0);
+        i++;
+    }
     return (a); 
 }
 
